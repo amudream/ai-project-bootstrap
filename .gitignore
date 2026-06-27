@@ -9,8 +9,9 @@ coverage/
 .tmp/
 .cache/
 
-# Reports / temporary output
-reports/*.tmp.html
+# Runtime reports generated from local/private data
+reports/private/
+reports/*.local.html
 
 # Environment and secrets
 .env
@@ -21,18 +22,24 @@ reports/*.tmp.html
 *.p12
 *.pfx
 *.crt
-*.cert
+*.cer
+*.der
 *.kdbx
-
-# Local AI / model caches
-models/
-*.gguf
-*.safetensors
-*.ckpt
-*.onnx
+secrets/
+credentials/
 
 # OS / editor
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
+.vscode/settings.json
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
