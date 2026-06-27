@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# Reports / temporary output
+reports/*.tmp.html
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cert
+*.kdbx
+
+# Local AI / model caches
+models/
+*.gguf
+*.safetensors
+*.ckpt
+*.onnx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
