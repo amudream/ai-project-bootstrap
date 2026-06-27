@@ -1,0 +1,39 @@
+{
+  "name": "ai-project-bootstrap",
+  "version": "0.3.0",
+  "private": false,
+  "type": "module",
+  "description": "Universal AI project bootstrap framework with AGENTS.md, skills, loop engineering, local AI support, visual HTML reports, domain profiles, and open-source reuse governance.",
+  "scripts": {
+    "report": "node scripts/render-report.mjs reports/sample-data.json reports/report-output.html",
+    "check:secrets": "node scripts/check-no-secrets.mjs",
+    "audit:deps": "node scripts/audit-dependencies.mjs",
+    "validate": "node scripts/validate-repo.mjs && npm run check:secrets && npm run report",
+    "init:profile": "node scripts/init-project-profile.mjs",
+    "dep:evaluate": "node scripts/evaluate-package.mjs"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "codex",
+    "AGENTS.md",
+    "skills",
+    "loop-engineering",
+    "html-report",
+    "openai-compatible",
+    "domain-packs",
+    "project-profiles",
+    "vertical-ai",
+    "open-source-reuse",
+    "dependency-governance",
+    "dependency-policy",
+    "supply-chain-security",
+    "b2b",
+    "stock-review",
+    "content-ops"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
