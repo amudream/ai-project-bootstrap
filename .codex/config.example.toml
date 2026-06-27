@@ -1,0 +1,9 @@
+# Example Codex project config. Copy to .codex/config.toml only when you want project-local overrides.
+# Keep real secrets out of this file.
+
+model_reasoning_effort = "high"
+model_verbosity = "high"
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+
+# Configure model provider in your user-level ~/.codex/config.toml or via environment variables.
