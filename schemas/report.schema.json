@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Project Bootstrap Report Data",
+  "type": "object",
+  "required": ["title", "subtitle", "kpis", "trend", "flow", "risks", "findings"],
+  "properties": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "kpis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "value", "delta", "note"],
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": ["string", "number"] },
+          "delta": { "type": "number" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "trend": { "type": "array", "items": { "type": "number" } },
+    "flow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "weight"],
+        "properties": {
+          "label": { "type": "string" },
+          "weight": { "type": "number" }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "level", "note"],
+        "properties": {
+          "name": { "type": "string" },
+          "level": { "enum": ["low", "medium", "high"] },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "evidence", "action"],
+        "properties": {
+          "title": { "type": "string" },
+          "evidence": { "type": "string" },
+          "action": { "type": "string" }
+        }
+      }
+    }
+  }
+}

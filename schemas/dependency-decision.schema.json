@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dependency Decision",
+  "type": "object",
+  "required": ["need", "selectedOption", "alternativesChecked", "reason", "license", "maintenanceSignal", "securityCheck", "risk", "verification", "exitPlan"],
+  "properties": {
+    "need": { "type": "string" },
+    "selectedOption": { "type": "string" },
+    "alternativesChecked": { "type": "array", "items": { "type": "string" } },
+    "reason": { "type": "string" },
+    "license": { "type": "string" },
+    "maintenanceSignal": { "type": "string" },
+    "securityCheck": { "type": "string" },
+    "risk": { "type": "string" },
+    "verification": { "type": "string" },
+    "exitPlan": { "type": "string" }
+  }
+}
