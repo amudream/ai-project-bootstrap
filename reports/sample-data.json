@@ -1,0 +1,26 @@
+{
+  "title": "AI Project Bootstrap 示例报告",
+  "subtitle": "用于验证报告生成器、可视化结构和项目质量门",
+  "kpis": [
+    { "label": "结构完整度", "value": "92", "delta": 12, "note": "核心框架文件已纳入验证" },
+    { "label": "密钥风险", "value": "低", "delta": -40, "note": ".env.local 被忽略，示例不含真实 key" },
+    { "label": "报告可视化", "value": "可运行", "delta": 25, "note": "HTML 从结构化 JSON 生成" }
+  ],
+  "trend": [40, 48, 52, 60, 68, 74, 82, 92],
+  "flow": [
+    { "label": "需求", "weight": 80 },
+    { "label": "AGENTS", "weight": 90 },
+    { "label": "Skills", "weight": 76 },
+    { "label": "报告", "weight": 84 }
+  ],
+  "risks": [
+    { "name": "密钥泄露", "level": "low", "note": "由 secret scan 和 .gitignore 控制" },
+    { "name": "需求漂移", "level": "medium", "note": "由 PROJECT_CHARTER 约束" },
+    { "name": "半成品提交", "level": "medium", "note": "由 CI 自动暴露" }
+  ],
+  "findings": [
+    { "title": "通用内核已定义", "evidence": "AGENTS.md + PROJECT_CHARTER.md", "action": "继续通过 profiles 垂直化" },
+    { "title": "报告生成可自动验证", "evidence": "npm run report", "action": "后续接入真实数据 schema" },
+    { "title": "依赖策略已明确", "evidence": "reuse-and-dependency-policy", "action": "重大依赖记录 decision record" }
+  ]
+}
